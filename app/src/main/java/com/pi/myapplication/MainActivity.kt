@@ -1,7 +1,6 @@
 package com.pi.myapplication
 
 import android.os.Bundle
-import android.view.ViewGroup
 import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pi.myapplication.databinding.ActivityMainBinding
@@ -31,7 +30,7 @@ class MainActivity : ComponentActivity() {
             adapter = listAdapter
         }
 
-//        val allJsons = JSONObject(json.developerCards)
+//        val allJsons = JSONObject(json.myCard)
 //        val templatesJson = allJsons.getJSONObject("templates")
 //        val cardJson = allJsons.getJSONObject("card")
 //        val factory = DivViewFactory(divContext, templatesJson)
