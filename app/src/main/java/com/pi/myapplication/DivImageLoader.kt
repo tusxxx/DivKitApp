@@ -23,7 +23,7 @@ class DivGlideImageLoader(private val context: Context) : DivImageLoader {
     override fun loadImage(imageUrl: String, callback: DivImageDownloadCallback): LoadReference {
         val target = DownloadCallbackAdapter(imageUrl.toUri(), callback)
         requestManager.load(imageUrl).into(target)
-        return LoadReference { }
+        return LoadReference { requestManager.clear(target) }
     }
 
     override fun loadImage(imageUrl: String, imageView: ImageView): LoadReference {
